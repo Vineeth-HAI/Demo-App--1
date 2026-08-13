@@ -1,7 +1,8 @@
 # FieldOps P2 — Firebase Authentication Setup
 
 **Audience:** Team lead  
-**Project:** P2 frontend (`P2/frontend`)  
+**Project:** Demo-App--1 (React Native frontend from P2)  
+
 **Stack:** React Native (Expo SDK 54) + Firebase Auth only  
 **Backend:** None. Sign up / sign in talk directly to Firebase.
 
@@ -33,7 +34,7 @@ We reuse the **same Firebase project as P1** (not a new project).
 | Console | https://console.firebase.google.com/project/fieldops-47bbf/overview |
 | App type | Web app config (used by the Expo JS SDK) |
 
-Client config lives in `P2/frontend/.env` as `EXPO_PUBLIC_*` variables (copied from P1):
+Client config lives in `.env` as `EXPO_PUBLIC_*` variables (copied from P1):
 
 ```
 EXPO_PUBLIC_FIREBASE_API_KEY=AIzaSyBdffo1dYow_AguL56Ns_nnEALJaE4VQHU
@@ -150,7 +151,7 @@ Firebase uses **one** phone flow for both. Confirming OTP **creates** the user i
 ## 5. How to run
 
 ```bash
-cd P2/frontend
+npm install
 npx expo start --clear
 ```
 
